@@ -1,9 +1,11 @@
-public enum Card {
-//    private SuitType suit;
-//    private CardRank rank;
+public class Card {
+    private CardRank rank;
 
-//    public Card(SuitType suit, CardRank rank){
-//        this.suit = suit;
-//        this.rank = rank;
-//    }
+    public Card(CardRank rank){
+        this.rank = rank;
+    }
+
+    public CardRank getRank() {
+        return this.rank;
+    }
 }
