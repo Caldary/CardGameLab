@@ -9,12 +9,17 @@ public class CardTest {
 
     @Before
     public void before(){
-        card = new Card(CardRank.ACE);
+        card = new Card(CardRank.ACE, SuitType.CLUBS);
     }
 
     @Test
     public void canGetRank(){
         assertEquals(CardRank.ACE, card.getRank());
+    }
+
+    @Test
+    public void canGetSuit(){
+        assertEquals(SuitType.CLUBS, card.getSuit());
     }
 
 }
